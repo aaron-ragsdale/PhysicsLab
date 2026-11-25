@@ -15,3 +15,7 @@ In Settings → Pages, select Deploy from a branch, main, / (root), and Save.
 ## Future modes
 
 Challenges and Sports are placeholders. Free Play is the first playable mode.
+
+## Optional pose controls
+
+Select Enable pose control and grant camera access. MediaPipe Pose Landmarker Lite runs locally, tracking wrists or wrists and ankles. Move tracked points through objects to impart velocity. Adjust motion strength and tracking responsiveness in the sidebar. Mouse and touch remain available. Disable pose control to stop the camera. The model and runtime download from external hosts; camera frames are processed locally. Camera access requires HTTPS and browser permission. This is a 2D motion mapping, not calibrated physical force measurement.
