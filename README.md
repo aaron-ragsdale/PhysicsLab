@@ -8,6 +8,14 @@ Free Play lets you grab, throw, stack and collide objects. Place balls, blocks, 
 
 Material and object-property changes apply to newly placed objects. Matter.js 0.20.0 loads from jsDelivr and runs locally in the browser. No API keys, backend or build step required. Internet access is needed to load the engine unless cached.
 
+## 2D and 3D labs
+
+- [2D Lab](https://aaron-ragsdale.github.io/PhysicsLab/): existing Matter.js playground plus Draw shape. Drag a closed outline, choose Smart snap for circles and rectangles or Smoothed custom shape for irregular polygons. Choose Fixed object to create stationary geometry. Use Grab / throw to interact afterward.
+- [3D Lab](https://aaron-ragsdale.github.io/PhysicsLab/3d.html): Three.js rendering and Rapier rigid-body simulation. Orbit the camera, place spheres, blocks, cylinders, ramps and platforms, or grab and reposition bodies.
+- Import local STL, OBJ, PLY, GLB or self-contained GLTF files. Geometry is normalized to the requested longest dimension in meters; STL is assumed Z-up. Imported meshes use a lab material rather than their original textures. Select convex hull, bounding box or fixed triangle mesh collision. Hulls approximate concave geometry; triangle meshes are fixed only. File limit 50 MB, vertex limit 300,000.
+- Adjust gravity, friction, bounce, mass and simulation speed. Select objects to rotate or remove them. The experimental 3D hand cursor uses a single selected hand and screen-plane grab/release, not calibrated depth.
+- Both pages run locally in the browser after downloading dependencies. No model upload or backend is required. WebGL and HTTPS camera support depend on the device. Scene persistence, STL export and 2D-to-3D extrusion are not yet implemented.
+
 ## Hosting
 
 In Settings → Pages, select Deploy from a branch, main, / (root), and Save.
